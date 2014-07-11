@@ -1,0 +1,124 @@
+/* app css stylesheet */
+
+.header {
+    height: 70px;
+}
+
+.body {
+    /* Firefox */
+    height: -moz-calc(100% - 70px);
+    /* WebKit */
+    height: -webkit-calc(100% - 70px);
+    /* Opera */
+    height: -o-calc(100% - 70px);
+    /* Standard */
+    height: calc(100% - 70px);
+}
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 100%;
+    height: 100%;
+}
+
+.menulogo {
+    width: 70%;
+    margin: 24px auto;
+    height: 110px;
+    background: url(../img/guardsystems-logo-vertical.png) no-repeat;
+    background-size: contain;
+}
+
+/* HEADER */
+
+.currentStatus {
+    display: inline;
+}
+
+.currentSpeed {
+    display: inline;
+    padding-left: 10px;
+}
+
+.currentSpeed:after {
+    content: '\F017';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: black;
+    font-family: "FontAwesome";
+    font-size: 1.2em;
+    text-align: center;
+    vertical-align: 14%;
+    line-height: 24px;
+}
+
+.currentList {
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: -30%;
+    font: 14px 'oxygen', sans-serif;
+}
+
+.currentList > li {
+    list-style-type: none;
+}
+
+.guardButton {
+    display: inline;
+    margin: 10px 0 10px 10px;
+    padding: 6px 13px 5px;
+    font-weight: bold;
+    border: none;
+    color: white !important;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    /* Make inputs the same size as anchors */
+
+    font-family: inherit;
+    /* Make inputs use the correct typeface instead of the browser default */
+
+    cursor: pointer;
+    /* Inputs need pointers! */
+
+    background: #46b1e1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+.guardButton.large {
+    padding: 10px 26px;
+}
+.guardButton.small {
+    padding: 0 10px;
+}
+.guardButton:hover {
+    text-decoration: none;
+    background: #35a0d0;
+}
+.guardButton.recording {
+    background: #ef6d45;
+}
+.guardButton.recording:hover {
+    text-decoration: none;
+    background: #d4713f;
+}
+.guardButton:disabled {
+    background: #9d9d9e;
+}
+
+/* MAP */
+
+div.icon-current-position {
+    background-color: #4482b4;
+    border-radius: 12px;
+    width:10px;
+    height:10px;
+}
